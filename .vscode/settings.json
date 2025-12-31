@@ -1,0 +1,8 @@
+{
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#263208",
+        "titleBar.activeBackground": "#35460C",
+        "titleBar.activeForeground": "#F7FCEC"
+    },
+    "python.defaultInterpreterPath": "e:\\Documentos\\Code\\Teaching\\dibs\\scripts-py\\.venv\\Scripts\\python.exe"
+}
