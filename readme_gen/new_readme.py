@@ -1,29 +1,11 @@
-import argparse
-import logging
 from datetime import datetime
 from pathlib import Path
 import sys
 
-
-def validated_directory(value: str) -> Path:
-    p = Path(value)
-    if not p.is_dir():
-        raise argparse.ArgumentTypeError(f"'{value}' is not a valid directory")
-    return p
+from readme_gen.app_logging import setup_logging
+from readme_gen.parser import build_parser
 
 
-def build_parser() -> argparse.ArgumentParser:
-    p = argparse.ArgumentParser()
-    p.add_argument("--name", required=True)
-    p.add_argument("-v", "--verbose", action="store_true")
-    p.add_argument("-o", "--out_dir", type=validated_directory, default=".")
-    return p
-
-
-def setup_logging(verbose: bool) -> logging.Logger:
-    level = logging.DEBUG if verbose else logging.WARNING
-    logging.basicConfig(level=level, format="%(message)s")
-    return logging.getLogger(__name__)
 
 
 def write_readme(content: str, out_dir: Path) -> None:
