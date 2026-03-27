@@ -30,6 +30,10 @@ This repository will grow as new lessons are added.
    - Focus: `argparse`-based CLI contracts, explicit parameter validation, basic
      logging, and a clear entry point.
    - Code: `readme_gen/`
+2) [Structured output in Python](https://dibs.ravenhill.cl/notes/software-libraries/scripting/structured-output/py/)
+   - Focus: JSON as persisted interoperable output, `dict` as a flexible
+     transient container, and `@dataclass` as an explicit stable model.
+   - Code: `structured-output/`
 
 ## Quickstart
 
@@ -57,6 +61,10 @@ uv run -m readme_gen.new_readme --name "Utility Scripts - DIBS" --out_dir .
 Tip: using `-m` (module execution) ensures imports work correctly within the
 `readme_gen` package.
 
+For the `structured-output/` example, keep the script-first layout in mind:
+the files use sibling imports, so the commands above switch into that directory
+before importing `comics` and `json_utils`.
+
 ## Repository Layout
 
 - `readme_gen/`: lesson module implementing a small README generator
@@ -64,6 +72,11 @@ Tip: using `-m` (module execution) ensures imports work correctly within the
   - `parser.py`: CLI contract definition (`--name`, `--verbose`, `--out_dir`)
   - `app_logging.py`: minimal logging setup
   - `new_readme.py`: entry point wiring everything together
+- `structured-output/`: script-first example showing JSON persistence and an
+  explicit data model
+  - `json_utils.py`: recursive `JSONValue` alias plus JSON writing helper
+  - `comics.py`: `Comic` dataclass and JSON-to-model conversion
+  - `comic.json`: sample payload used by the structured-output example
 
 ## Contributing
 

@@ -2,7 +2,15 @@
     "workbench.colorCustomizations": {
         "activityBar.background": "#263208",
         "titleBar.activeBackground": "#35460C",
-        "titleBar.activeForeground": "#F7FCEC"
+        "titleBar.activeForeground": "#F7FCEC",
+        "titleBar.inactiveBackground": "#263208",
+        "titleBar.inactiveForeground": "#F7FCEC",
+        "statusBar.background": "#263208",
+        "statusBar.foreground": "#F7FCEC",
+        "statusBar.debuggingBackground": "#263208",
+        "statusBar.debuggingForeground": "#F7FCEC",
+        "statusBar.noFolderBackground": "#263208",
+        "statusBar.noFolderForeground": "#F7FCEC"
     },
-    "python.defaultInterpreterPath": "e:\\Documentos\\Code\\Teaching\\dibs\\scripts-py\\.venv\\Scripts\\python.exe"
+    "python.defaultInterpreterPath": "e:\\teaching\\DIBS\\projects\\scripts-py\\.venv\\Scripts\\python.exe"
 }
