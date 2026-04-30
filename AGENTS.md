@@ -22,6 +22,7 @@ Context and essential rules for agents working in this subproject.
 - Run the README generator with `uv run -m readme_gen.new_readme --help` or `uv run -m readme_gen.new_readme --name "Utility Scripts - DIBS" --out_dir .`.
 - For `structured-output/`, keep the script-first layout in mind and run commands from that directory when sibling imports require it.
 - There is no verified test command in the current project files; do not invent one without adding the required test setup.
+- Do not modify changelogs unless the user explicitly asks for changelog updates.
 
 ## Code Conventions
 
